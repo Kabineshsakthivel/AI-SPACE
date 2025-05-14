@@ -89,9 +89,7 @@ int main() {
 
     // Output the shortest distances and paths from the warehouse to all locations
     cout << "\nOptimized Delivery Routes from Warehouse (" << locationNames[source] << "):\n";
-    for (int i = 0; i < V; i++) {
-        if (i == source) continue;
-        cout << "To " << locationNames[i] << " -> Shortest Time: " 
+    for (int i = 0; i < V; i++) {i] << " -> Shortest Time: " 
              << (distances[i] == INT_MAX ? -1 : distances[i]) << " mins, Path: ";
         if (distances[i] == INT_MAX) {
             cout << "No path available";
